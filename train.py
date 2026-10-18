@@ -400,7 +400,7 @@ def launch():
     args.device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
     # Optionally, set GPU limits
-    set_gpu_memory_limit(30)
+    set_gpu_memory_limit(12)
     print_gpu_utilization()
 
     # Create the dataset
